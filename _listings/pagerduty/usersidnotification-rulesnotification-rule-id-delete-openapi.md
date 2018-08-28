@@ -1,9 +1,11 @@
+---
 swagger: "2.0"
 x-collection-name: PagerDuty
-x-complete: 1
+x-complete: 0
 info:
-  title: PagerDuty
+  title: PagerDuty Delete a user's notification rule
   version: 1.0.0
+  description: Delete users  notification rules notification rule
 schemes:
 - http
 produces:
@@ -76,21 +78,17 @@ paths:
           description: OK
       tags:
       - User Notification Rules
-    put:
-      summary: Update a user's notification rule
-      description: Put users  notification rules notification rule
-      operationId: update-a-users-notification-rule
-      x-api-path-slug: usersidnotification-rulesnotification-rule-id-put
-      parameters:
-      - in: query
-        name: No Name
-      - in: body
-        name: notification_rule
-        description: The users notification rule to be updated
-        schema:
-          $ref: '#/definitions/holder'
-      responses:
-        200:
-          description: OK
-      tags:
-      - User Notification Rules
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---
